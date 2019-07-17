@@ -1,0 +1,712 @@
+atham Hussain
+Copyright 2019 Satham
+Written for -- mock Facebook Revamp
+
+Swatch Colors
+4168a9 -- Dark Blue
+=================================*/
+
+/* resets and overrides
+============ */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* Link & type
+========== */
+
+body {
+	font-size: 100%;
+	background: #e9ebee;
+}
+
+a:hover, a:link, a:active, a:visited {text-decoration: none;}
+
+a, span {
+	display: inline-block;
+}
+
+/* main layout
+============ */
+
+/*header*/
+header {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+	background: #4168a9;
+}
+
+/*sidebar*/
+aside {
+	position: fixed;
+	height: 100%;
+	width: 20%;
+	top: 44px;
+	box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 3px 0 rgba(0,0,0,.12);
+	background: #e9ebee;
+}
+
+/*main*/
+section {
+	position: relative;
+	left: 16.66%; /*20%*/
+	width: 80%;
+	top: 44px;
+	padding-bottom: 40px;
+	background: #e9ebee;
+	/* box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 3px 0 rgba(0,0,0,.12); */
+}
+
+/* seconday layout
+================ */
+
+nav {
+	position: relative;
+	left: 8.33%;
+}
+
+header, nav, header nav ul, header nav ul li {
+	height: 44px;
+}
+
+header nav ul:first-child li a {
+	padding: 10px 5px;
+}
+
+header nav ul:nth-child(2) li a {
+	padding: 10px 10px;
+}
+
+header nav div ul li a {
+	padding: 10px 15px;
+}
+
+header nav ul li a input,  header nav ul li a div, .header-links img {
+	height: 24px;
+}
+
+header nav ul li a input {
+    border: none;
+    border-radius: 2px;
+    text-indent: 5px;
+    font-size: 15px;
+}
+
+.header-links span {
+	color: white;
+	padding: 4px;
+	font-size: 12px;
+    font-weight: 500;
+}
+
+.header-links img {
+	width: 24px;
+	border-radius: 50%;
+}
+
+aside.alpha ul:first-child {
+	padding-bottom: 10px;
+}
+
+aside.alpha ul:first-child li:first-child {
+	height: auto;
+}
+
+aside.alpha ul:first-child li:first-child div {
+	text-align: center;
+    padding: 15px 10px;
+}
+
+aside.alpha ul:first-child li:first-child div img {
+	border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    border: 5px solid whitesmoke;
+}
+
+aside.alpha ul:first-child li:nth-child(2) > a:first-child > span:first-child {
+	font-size: 20px;
+}
+
+aside.alpha ul:first-child li:nth-child(2) > a:nth-child(2) {
+    font-weight: 500;
+    font-size: 15px;
+    color: #8c7f7f;
+}
+
+aside ul:nth-child(2) li {
+	height: 30px;
+}
+
+aside ul li a {
+	width: 100%;
+	color: black;
+	padding: 5px 5px;
+    font-size: 14px;
+}
+
+aside ul:nth-child(2) li .active, aside ul:nth-child(2) li a:hover {
+	background: #f5f5f5;
+	border-radius: 3px;
+	border: 1px solid lightgray;
+}
+
+aside ul:nth-child(2) li .active {
+	font-weight: 500;
+}
+
+aside ul:nth-child(3) {
+	padding-top: 10px;
+}
+
+aside ul:nth-child(3) li button {
+	padding: 5px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 75%;
+    font-weight: bold;
+}
+
+/*Main section*/
+.container .banner, .container .banner div, .container .banner div img {
+	height: 317px;
+}
+
+.container > div:nth-child(2) {
+	background: white;
+	padding: 15px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.container div:nth-child(2) button {
+	height: 30px;
+	padding: 6px;
+    border: 1px solid grey;
+    font-size: 75%;
+    font-weight: 500;
+    cursor: pointer;
+    width: 75px;
+    float: left;
+    margin-left: -1px;
+    background: whitesmoke;
+}
+
+.container div:nth-child(2) button:first-child {
+	border-radius: 2px 0 0 2px; /*top-left, top-right, bottom-right, bottom-left*/
+}
+
+.container div:nth-child(2) button:last-child {
+	border-radius: 0 2px 2px 0; /*top-left, top-right, bottom-right, bottom-left*/
+	width: 40px;
+}
+
+.container div:nth-child(2) button span:nth-child(2) {
+	color: #594c4c;
+	height: 12px;
+	padding-left: 5px;
+}
+
+.center-part {
+	border-radius: 3px;
+}
+
+.container .write-post {
+	margin: 12px 0 12px;
+}
+
+.container .write-post, .container .community {
+	padding: 15px;
+	background: white;
+	height: 150px;
+}
+
+.container .write-post > div:nth-child(1), 
+.container .write-post > div:nth-child(1) > div:nth-child(1), 
+.container .write-post > div:nth-child(1) > div:nth-child(1) a, 
+.container .write-post > div:nth-child(1) > div:nth-child(2) {
+	height: 40px;
+}
+
+.container .write-post > div:nth-child(1) > div:nth-child(1) a img {
+	border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.container .write-post > div:nth-child(1) > div:nth-child(2) {
+	color: gray;
+    font-size: 13px;
+    padding: 10px;
+    width: 80%;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+.container .write-post > div:nth-child(2) {
+	height: 25px;
+	border-bottom: 1px solid #ede0e0;
+}
+
+.container .write-post > div:nth-child(3) {
+	height: 60px;
+	padding: 10px 0;
+}
+
+.container .write-post > div:nth-child(3) a, .container .write-post > div:nth-child(3) a div {
+	height: 40px;
+}
+
+.container .write-post > div:nth-child(3) a {
+	margin-right: 5px;
+}
+
+.container .write-post > div:nth-child(3) a div {
+	border-radius: 20px;
+	background: #f4f4f4;
+}
+
+.container .write-post > div:nth-child(3) a div > div:nth-child(1) {
+	padding: 6px;
+}
+
+.container .write-post > div:nth-child(3) a div > div:nth-child(2) span {
+	font-size: 12px;
+	padding: 13px 5px;
+}
+
+/*.container .write-post > div:nth-child(3) a div span:nth-child(2) {
+	height: 28px;
+	padding: 10px 5px;
+}*/
+
+.community {
+	margin: 12px 0 0 12px;
+	font-size: 85%;
+}
+
+.community > div:first-child {
+	padding: 5px 0;
+}
+
+.community > div:first-child a:hover {
+	text-decoration: underline;
+}
+
+.community > div:not(:first-child) {
+	height: 35px;
+	padding: 5px 0;
+}
+
+.community > div:not(:first-child) > div {
+	height: 30px;
+}
+
+.community > div:not(:first-child) > div:first-child {
+	padding: 6px 0;
+}
+
+.community > div:not(:first-child) > div:nth-child(2) {
+	padding: 6px 10px;
+}
+
+.community > div:not(:first-child) > div:nth-child(2) span {
+	font-size: 12px;
+}
+
+.container .center-part .posts-main {
+	background: white;
+	padding: 10px;
+}
+
+.container .center-part .posts-main  h5 {
+	padding-bottom: 10px;
+}
+
+.container .center-part .posts-main .posts {
+	/*height: 150px;*/
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 8px;
+	margin-bottom: 10px;
+}
+
+.container .center-part .posts-main .posts > div {
+	height: 50px;
+}
+
+.container .center-part .posts-main .posts > div:nth-child(1) > div {
+	height: 40px;
+}
+
+.container .center-part .posts-main .posts > div:nth-child(1) > div:nth-child(1) img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+.container .center-part .posts-main .posts > div:nth-child(1) > div:nth-child(2) {
+	padding-left: 10px;
+}
+
+.container .center-part .posts-main .posts .span {
+	font-size: 12px;
+	color: gray;
+}
+
+.container .center-part .posts-main .posts > div:nth-child(2) {
+	font-size: 12px;
+}
+
+.container .center-part .posts-main .posts > div:nth-child(3) {
+	height: 40px;
+	padding: 8px 0;
+	border-bottom: 1px solid lightgray;
+	border-top: 1px solid lightgray;
+}
+
+.container .center-part .posts-main .posts > div:nth-child(3) .likes {
+	padding-left: 5px;
+}
+
+/*Chat sidebar*/
+aside.beta {
+	left: 83.33%;
+}
+
+aside.beta .chat-sidebar li .friends {
+	height: 40px;
+	padding: 2px;
+	font-size: 12px;
+}
+
+aside.beta .chat-sidebar li .friends:hover {
+	background: #d6d4d4;
+}
+
+aside.beta .chat-sidebar li .friends div {
+	height: 36px;
+	padding: 10px 5px;
+}
+
+aside.beta .chat-sidebar li .friends div img {
+	border-radius: 50%;
+	height: 36px;
+}
+
+aside.beta .chat-sidebar li .friends .online {
+	border-radius: 50%;
+	background: green;
+	height: 5px;
+    width: 5px;
+}
+
+aside.beta .chat-sidebar li .friends .away {
+	color: #969191;
+}
+
+[class*="col-"] {
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	/*For tablets*/
+	.col-s-1 {
+		width: 8.33%;
+	}
+	.col-s-2 {
+		width: 16.66%;
+	}
+	.col-s-3 {
+		width: 25%;
+	}
+	.col-s-4 {
+		width: 33.33%;
+	}
+	.col-s-5 {
+		width: 41.66%;
+	}
+	.col-s-6 {
+		width: 50%;
+	}
+	.col-s-7 {
+		width: 58.33%;
+	}
+	.col-s-8 {
+		width: 66.66%;
+	}
+	.col-s-9 {
+		width: 75%;
+	}
+	.col-s-10 {
+		width: 83.33%;
+	}
+	.col-s-11 {
+		width: 91.66%;
+	}
+	.col-s-12 {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/*For desktops*/
+	.col-l-1 {
+		width: 8.33%;
+	}
+	.col-l-2 {
+		width: 16.66%;
+	}
+	.col-l-3 {
+		width: 25%;
+	}
+	.col-l-4 {
+		width: 33.33%;
+	}
+	.col-l-5 {
+		width: 41.66%;
+	}
+	.col-l-6 {
+		width: 50%;
+	}
+	.col-l-7 {
+		width: 58.33%;
+	}
+	.col-l-8 {
+		width: 66.66%;
+	}
+	.col-l-9 {
+		width: 75%;
+	}
+	.col-l-10 {
+		width: 83.33%;
+	}
+	.col-l-11 {
+		width: 91.66%;
+	}
+	.col-l-12 {
+		width: 100%;
+	}
+	.mobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.desktop {
+		display: none;
+	}
+	aside {
+		display: none;
+	}
+	section {
+		left: 0;
+	}
+	nav {
+		left: 0;
+	}
+	.community {
+		margin: 0;
+	}
+	.posts-main {
+		margin: 12px 0;
+	}
+}
+
+@media only screen and (max-width: 1025px) {
+	.hide {
+		display: none;
+	}
+}
+
+/* Form elements
+============ */
+label {}
+input {}
+input.button {}
+
+/* Miscellaneous
+============ */
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+/*SPRITE IMAGES*/
+.sprite-header {
+	background: url('header.png') no-repeat; 
+}
+
+.sprite-body {
+	background: url('body.png') no-repeat; 
+}
+
+.sprite-container {
+	background: url('container.png') no-repeat;
+}
+
+.sprite-emoji {
+	background: url('emoji1.png') no-repeat;
+}
+
+.logo {
+	background-position: -125px -304px;
+	width: 24px;
+	height: 24px;
+}
+
+.user-gropup {
+	background-position: -150px -308px;
+	width: 23px;
+	height: 24px;
+}
+
+.messages {
+	background-position: -128px -332px;
+	width: 20px;
+	height: 20px;
+}
+
+.notification {
+	background-position: -202px -331px;
+	width: 19px;
+	height: 17px;
+}
+
+.help {
+	background-position: -127px -356px;
+	width: 20px;
+	height: 20px;
+}
+
+.dropdown {
+	background-position: -257px -338px;
+	width: 10px;
+	height: 6px;
+}
+
+.mobile-more {
+	background-position: -113px -382px;
+	width: 5px;
+	height: 10px;
+}
+
+.tick {
+	background-position: 0 -337px;
+	width: 16px;
+	height: 16px;
+}
+
+.like {
+	background-position: 0 -473px;
+	width: 12px;
+	height: 12px;
+}
+
+.follow {
+	background-position: -104px -424px;
+	width: 12px;
+	height: 12px;
+}
+
+.share {
+	background-position: -91px -473px;
+	width: 12px;
+	height: 12px;
+}
+
+.page-more {
+	background-position: -52px -411px;
+	width: 14px;
+	height: 4px;
+}
+
+.search {
+	background-position: -140px -264px;
+	width: 14px;
+	height: 14px;
+}
+
+.smile {
+	background-position: -34px -456px;
+	width: 16px;
+	height: 16px;
+}
+
+.upload-photo {
+	background-position: -1px -1312px;
+	width: 28px;
+	height: 28px;
+}
+
+.tag-friends {
+	background-position: 0 -849px;
+	width: 30px;
+	height: 30px;
+}
+
+.check-in {
+	background-position: -2px -1344px;
+	width: 26px;
+	height: 30px;
+}
+
+.post-more {
+	background-position: -2px -2246px;
+	width: 26px;
+	height: 8px;
+}
+
+.invite-morepeople {
+	background-position: -51px -456px;
+	width: 16px;
+	height: 15px;
+}
+
+.globe {
+	background-position: 0 -486px;
+	width: 12px;
+	height: 12px;
+}
+
+.emoji-haha {
+	background-position: -24px -987px;
+	width: 20px;
+	height: 20px;
+}
+
+.emoji-like {
+	background-position: -48px -987px;
+	width: 20px;
+	height: 20px;
+}
+
+.emoji-heart {
+	background-position: -72px -987px;
+	width: 20px;
+	height: 20px;
+}
