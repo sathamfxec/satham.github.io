@@ -9,7 +9,9 @@ Swatch Colors
 /* resets and overrides
 ============ */
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 	font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
@@ -30,7 +32,9 @@ h1,h2,h3,h4,h5,h6 {
 ========== */
 
 body {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 	font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
