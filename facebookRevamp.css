@@ -68,7 +68,7 @@ section {
 	/* box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 3px 0 rgba(0,0,0,.12); */
 }
 
-/* seconday layout
+/* secondary layout
 ================ */
 
 nav {
@@ -322,7 +322,7 @@ aside ul:nth-child(3) li button {
 }
 
 .community > div:not(:first-child) > div:nth-child(2) {
-	padding: 6px 10px;
+	padding: 6px 0 10px 10px
 }
 
 .community > div:not(:first-child) > div:nth-child(2) span {
@@ -526,9 +526,18 @@ aside.beta .chat-sidebar li .friends .away {
 	.posts-main {
 		margin: 12px 0;
 	}
+	.hide {
+		display: none;
+	}
 }
 
-@media only screen and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1025px) {
+	section {
+		width: 83.33% !important;
+	}
+	section > div {
+		width: 100% !important;
+	}
 	.hide {
 		display: none;
 	}
