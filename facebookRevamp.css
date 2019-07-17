@@ -9,13 +9,18 @@ Swatch Colors
 
 /* resets and overrides
 ============ */
-body * {
-	-webkit-box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-  	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
+}
+
+body {
+    font-size: 100%;
+    background: #e9ebee;
 }
 
 ul {
@@ -24,14 +29,6 @@ ul {
 
 /* Link & type
 ========== */
-
-body {
-	font-size: 100%;
-	background: #e9ebee;
-	padding: 0;
-        margin: 0;
-}
-
 a:hover, a:link, a:active, a:visited {text-decoration: none;}
 
 a, span {
