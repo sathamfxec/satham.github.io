@@ -23,6 +23,9 @@ ul {
 ========== */
 
 body {
+	padding: 0;
+	margin: 0;
+	font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
 	font-size: 100%;
 	background: #e9ebee;
 }
