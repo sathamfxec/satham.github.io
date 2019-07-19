@@ -4,7 +4,12 @@ Copyright 2019 Satham
 Written for -- mock Facebook Revamp
 
 Swatch Colors
-4168a9 -- Dark Blue
+#4168a9 -- Dark Blue
+#2ab72a -- Forest Green
+#e9ebee -- Athens Gray
+#8C7F7F -- Hurricane
+#f5f5f5 -- Wild Sand
+#f4f4f4 -- Wild Sand
 =================================*/
 
 /* resets and overrides
@@ -131,7 +136,7 @@ aside.alpha ul:first-child li:first-child div {
 aside.alpha ul:first-child li:first-child div img {
 	border-radius: 100%;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     border: 5px solid whitesmoke;
 }
 
@@ -224,9 +229,9 @@ aside ul:nth-child(3) li button {
 	border-radius: 3px;
 }
 
-.container .write-post {
+/*.container .write-post {
 	margin: 12px 0 12px;
-}
+}*/
 
 .container .write-post, .container .community {
 	padding: 15px;
@@ -296,7 +301,7 @@ aside ul:nth-child(3) li button {
 }*/
 
 .community {
-	margin: 12px 0 0 12px;
+	/*margin: 12px 0 0 12px;*/
 	font-size: 85%;
 }
 
@@ -411,9 +416,9 @@ aside.beta .chat-sidebar li .friends div img {
 
 aside.beta .chat-sidebar li .friends .online {
 	border-radius: 50%;
-	background: green;
-	height: 5px;
-    width: 5px;
+	background: #2ab72a;
+	height: 7px;
+    width: 7px;
 }
 
 aside.beta .chat-sidebar li .friends .away {
@@ -462,6 +467,25 @@ aside.beta .chat-sidebar li .friends .away {
 	.col-s-12 {
 		width: 100%;
 	}
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+	nav {
+		left: 0;
+	}
+	section {
+		left: 0;
+		width: 100% !important;
+	}
+	.community {
+		margin: 0;
+	}
+	/*.posts-main {
+		margin: 12px 0;
+	}*/
 }
 
 @media only screen and (min-width: 768px) {
@@ -502,14 +526,30 @@ aside.beta .chat-sidebar li .friends .away {
 	.col-l-12 {
 		width: 100%;
 	}
+	nav {
+		left: 8.33%;
+	}
+	section {
+		width: 66.66% !important;
+		left: 16.66%;
+	}
 	.mobile {
 		display: none;
 	}
+	.desktop {
+		display: block;
+	}
+	.community {
+		margin: 0 0 0 12px;
+	}
+	/*.posts-main {
+		margin: 0 0 12px;
+	}*/
 }
 
 @media only screen and (max-width: 600px) {
-	.desktop {
-		display: none;
+	nav {
+		left: 0;
 	}
 	aside {
 		display: none;
@@ -517,26 +557,39 @@ aside.beta .chat-sidebar li .friends .away {
 	section {
 		left: 0;
 	}
-	nav {
-		left: 0;
+	.mobile {
+		display: block;
 	}
-	.community {
-		margin: 0;
-	}
-	.posts-main {
-		margin: 12px 0;
+	.desktop {
+		display: none;
 	}
 	.hide {
 		display: none;
 	}
+	.community {
+		margin: 0;
+	}
+	/*.posts-main {
+		margin: 12px 0;
+	}*/
 }
 
 @media (min-width: 768px) and (max-width: 1025px) {
+	nav {
+		left: 8.33%;
+	}
 	section {
 		width: 83.33% !important;
+		left: 16.66%;
 	}
 	section > div {
 		width: 100% !important;
+	}
+	.mobile {
+		display: none;
+	}
+	.desktop {
+		display: block;
 	}
 	.hide {
 		display: none;
@@ -566,6 +619,10 @@ input.button {}
 .no-padding {
 	padding: 0 !important;
 }
+
+.margin-bottom {
+	margin-bottom: 12px;
+} 
 
 /*SPRITE IMAGES*/
 .sprite-header {
