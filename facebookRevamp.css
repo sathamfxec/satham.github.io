@@ -158,7 +158,7 @@ aside ul li a {
 	width: 100%;
 	color: black;
 	padding: 5px 5px;
-    font-size: 14px;
+    	font-size: 14px;
 }
 
 aside ul:nth-child(2) li .active, aside ul:nth-child(2) li a:hover {
@@ -186,10 +186,11 @@ aside ul:nth-child(3) li button {
 }
 
 /*Main section*/
+/*
 .container .banner, .container .banner div, .container .banner div img {
 	height: 317px;
 }
-
+*/
 .container > div:nth-child(2) {
 	background: white;
 	padding: 15px;
@@ -394,9 +395,13 @@ aside.beta {
 	left: 83.33%;
 }
 
+aside.beta .chat-sidebar li {
+	cursor:pointer;
+}
+
 aside.beta .chat-sidebar li .friends {
-	height: 40px;
-	padding: 2px;
+	height: 44px;
+    	padding: 4px;
 	font-size: 12px;
 }
 
@@ -422,7 +427,7 @@ aside.beta .chat-sidebar li .friends .online {
 }
 
 aside.beta .chat-sidebar li .friends .away {
-	color: #969191;
+	color: gray;
 }
 
 [class*="col-"] {
@@ -624,6 +629,14 @@ input.button {}
 	margin-bottom: 12px;
 } 
 
+.flex {
+	display: flex;
+}
+
+.align-center {
+ 	align-items: center;
+}
+
 /*SPRITE IMAGES*/
 .sprite-header {
 	background: url('header.png') no-repeat; 
@@ -650,7 +663,7 @@ input.button {}
 .user-gropup {
 	background-position: -150px -308px;
 	width: 23px;
-	height: 24px;
+	height: 20px;
 }
 
 .messages {
@@ -662,7 +675,7 @@ input.button {}
 .notification {
 	background-position: -202px -331px;
 	width: 19px;
-	height: 17px;
+	height: 20px;
 }
 
 .help {
@@ -684,6 +697,7 @@ input.button {}
 }
 
 .tick {
+	margin-left: 5px;
 	background-position: 0 -337px;
 	width: 16px;
 	height: 16px;
